@@ -1,0 +1,53 @@
+---
+layout: home
+---
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('{{ site.data.global.res_url }}/home/bg-vips.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="page-heading">
+                    <h1>感谢你们</h1>
+                    <hr class="small">
+                    <span class="subheading">读者 朋友 亲人 无私分享 不计回报</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+
+    {% for i in site.data.vip %}
+    {% assign vip = i[1] %}
+    <div class="row">
+
+        <div class="col-lg-2 col-lg-offset-2">
+                <img class="img-circle img-thumbnail"
+                  style="margin-top:25px;margin-left:25px;max-width:150px;max-height:120px"
+                  src="{{site.data.global.res_url}}/vips/{{vip.code}}/global-head.jpg"></img>
+        </div>
+
+        <div class="col-lg-8">
+              <div class="post-preview">
+                  <a>
+                      <h2 class="post-title">
+                          {{vip.name}}
+                          <small style="float:right"><small> 编号{{vip.numb}}</small></small>
+                      </h2>
+                      <h3 class="post-subtitle">
+                          {{vip.sign}}
+                      </h3>
+                  </a>
+                  <p class="post-meta">{{vip.eval}}</p>
+                  <p class="post-meta"><a href="{{vip.link}}">阅读{{vip.name}}</a></p>
+              </div>
+        </div>
+
+    </div>
+    <hr>
+    {% endfor %}
+
+</div>

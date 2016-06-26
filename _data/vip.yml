@@ -1,0 +1,17 @@
+001-liuchang:
+  code: 001-liuchang
+  numb: "001"
+  name: 刘畅
+  head: /vips/001-liuchang/global-head.jpg
+  sign: 一二三四五六七八九十一二三四五六七八九十
+  eval: 中国好队友，非常认真负责。
+  link: /vips/001-liuchang
+
+002-qiaoantong:
+  code: 002-qiaoantong
+  numb: "002"
+  name: 乔安同
+  head: /vips/002-qiaoantong/global-head.jpg
+  sign: 一二三四五六七八九十一二三四五六七八九十
+  eval: 如果用一句话来描述我自己，请说我的名字，哈哈哈哈哈哈哈哈。
+  link: /vips/001-liuchang
