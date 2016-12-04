@@ -28,6 +28,13 @@
 3. test on different screen,and modify them.
 
 ### 介绍
-暂未填写
+1. 网站层：最外层的index.html/vips.html/about.html/encourage.html，是网站的四个大页面。
+  - vips.html展现所有贵宾的一个简介及其主页的链接，这需要从_data/vip.yml中读取数据
+2. 主页层：vips/xxx-name.html，是每个vip的主页，展示了这个vip完整的一生中，所有的采访记录
+  - vips/xxx-name.html不过是_layout/life.html类的一个实例，需要根据实例的vip_code中，从_data/vip.yml中读取贵宾信息（如名称和签名），并从_data/vips/xxx-name.yml中，读取每年的记录。
+3. 文章层：_posts/xxx-name/yyyy-mm-dd-xxx-name-yyyy.md，是每个vip具体某一年的详细记录描述，包括了其采访内容简介及视频链接等
+  - /xxx-name/文件夹是为了方便分组管理，无实际作用
+  - yyyy-mm-dd-xxx-name-yyyy.md是文章时间-编号-姓名-记录编号，记录编号指的2016年或2017年这种的，一开始的设计中考虑到了可能会有2016a，2016b这种的，将来可以考虑取消掉
+  - xxxxx.md是_layouts/post.html类的一个实例，在表头注明自己的贵宾编号（vip_code）和记录编号（record_year），post.html从vips/xxx-name.yml中提取本年的编号、签名、头像等。
 
 ### 需要问的问题
