@@ -20,8 +20,8 @@ layout: home
 <!-- Main Content -->
 <div class="container">
 
-    {% for i in site.data.vip %}
-    {% assign vip = i[1] %}
+    {% for vip in site.categories.vips %}
+
     <div class="row">
 
         <div class="col-lg-2 col-lg-offset-2">
@@ -42,7 +42,7 @@ layout: home
                       </h3>
                   </a>
                   <p class="post-meta">{{vip.eval}}</p>
-                  <p class="post-meta"><a href="{{vip.link}}">阅读{{vip.name}}</a></p>
+                  <p class="post-meta"><a href="{{vip.url}}">阅读{{vip.name}}</a></p>
               </div>
         </div>
 
