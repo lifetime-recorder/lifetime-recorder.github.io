@@ -24,6 +24,7 @@
 4. add duoshuo comment to the template.add google analyse.
 6. prepare new questions,and watch match more interviews online,and learn how to do it.
 3. test on different screen,and modify them.
+3. use CDN for static files, make it can be accessed faster.
 
 ### 操作
 1. 添加新用户：在_posts/000-vips中添加一个新的用户介绍文件
